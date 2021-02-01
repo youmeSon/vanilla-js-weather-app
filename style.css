@@ -1,58 +1,127 @@
 :root {
   /*colour*/
   --color-light-grey: #a1a1a1;
-  --color-grey: #6c6e6c;
-  --color-blue: #3b88c3;
-  --color-black: #3f454d;
+  --color-grey: #554542;
+  --color-blue: #0d75c5;
+  --color-black: #131314;
   --color-white: #ffffff;
   --color-pink: #f3d9eb;
 
   /*sizez*/
-  --search-fontSize: 24px;
+  --search-fontSize: 36px;
   --city-fontSize: 36px;
-  --temp-fontSize: 54px;
+  --temp-fontSize: 60px;
   --description-fontSize: 16px;
   --detail-fontSize: 24px;
 }
 
-body {
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: url(img/galshir-space-wallpaper-2_jpg\ by\ Gal\ Shir.jpg)
+    no-repeat center fixed;
+  background-size: cover;
   font-family: "Noto Sans JP", "sans-serif";
+}
+
+.search_icon img {
+  width: 50px;
 }
 
 .search_icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 120px 15px 15px;
   font-size: var(--search-fontSize);
+  color: var(--color-pink);
+  font-weight: bold;
+  margin: 0 30px;
 }
 
 .search_button {
   display: flex;
   justify-content: center;
+  margin: 10px;
+}
+
+.search_button input {
+  width: 70%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  border-radius: 10%;
+}
+.search_button i {
+  padding: 10px 15px;
+}
+
+.result_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
 }
 
 #cityName {
-  display: flex;
-  justify-content: center;
-  font-size: var(--result-city-fontSize);
+  color: var(--color-black);
+  font-size: var(--city-fontSize);
+  align-self: cent;
+
+  margin-bottom: 20px;
 }
 
 #temp {
-  display: flex;
-  justify-content: center;
-  font-size: var(--result-temp-fontSize);
+  background-color: rgb(243, 216, 191);
+  opacity: 0.7;
+  border-radius: 100%;
+  font-size: var(--temp-fontSize);
+  padding: 20px;
+  margin-top: 0;
 }
 #description {
-  display: flex;
-  justify-content: center;
   font-size: var(--result-description-fontSize);
   color: var(--color-light-grey);
 }
-
+/*
 .result_detail {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   font-size: var(--detail-fontSize);
+}
+*/
+.detail_first {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: var(--detail-fontSize);
+  margin-bottom: 40px;
+}
+
+.detail_second {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: var(--detail-fontSize);
+}
+
+#cloud i {
+  color: var(--color-blue);
+}
+#windSpeed i {
+  color: var(--color-blue);
+}
+#maxTemp i {
+  color: var(--color-blue);
+}
+#minTemp i {
+  color: var(--color-blue);
 }

@@ -9,9 +9,11 @@
 </head>
 <body>
   <!--search-->
+  
   <nav class="search_bar">
     <div class="search_icon">
       <p><i class="fas fa-rainbow"></i> Do you want to know the weather?</p>
+      <img src="img/Hello Sun - Studio Cosmos.gif" alt="">
     </div>
     <div class="search_button">
       <form id="search" action="">
@@ -19,17 +21,24 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
+    <!-- result-->
     <div class="search_result">
-      <h2 id="cityName"></h2>
-      <h1 id="temp"></h1>
-      <h2 id="description"></h2>
-      <div class="result_detail">
-        <h3 id="cloud"></h3>
-        <h3 id="windSpeed"></h3>
-        <h3 id="maxTemp"></h3>
-        <h3 id="minTemp"></h3>
+      <div class="result_main">
+        <h2 id="cityName"></h2>
+        <h1 id="temp"></h1>
+        <h2 id="description"></h2>
       </div>
-           
+      <div class="result_detail">
+        <div class="detail_first">
+          <h3 id="cloud"></h3>
+          <h3 id="windSpeed"></h3>
+        </div>
+        <div class="detail_second">
+          <h3 id="maxTemp"></h3>
+          <h3 id="minTemp"></h3>
+        </div>
+      </div>   
+    </div>     
   </nav>
     
 
