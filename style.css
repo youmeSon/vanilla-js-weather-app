@@ -1,0 +1,58 @@
+:root {
+  /*colour*/
+  --color-light-grey: #a1a1a1;
+  --color-grey: #6c6e6c;
+  --color-blue: #3b88c3;
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-pink: #f3d9eb;
+
+  /*sizez*/
+  --search-fontSize: 24px;
+  --city-fontSize: 36px;
+  --temp-fontSize: 54px;
+  --description-fontSize: 16px;
+  --detail-fontSize: 24px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Noto Sans JP", "sans-serif";
+}
+
+.search_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-size: var(--search-fontSize);
+}
+
+.search_button {
+  display: flex;
+  justify-content: center;
+}
+
+#cityName {
+  display: flex;
+  justify-content: center;
+  font-size: var(--result-city-fontSize);
+}
+
+#temp {
+  display: flex;
+  justify-content: center;
+  font-size: var(--result-temp-fontSize);
+}
+#description {
+  display: flex;
+  justify-content: center;
+  font-size: var(--result-description-fontSize);
+  color: var(--color-light-grey);
+}
+
+.result_detail {
+  display: flex;
+  justify-content: space-around;
+  font-size: var(--detail-fontSize);
+}
