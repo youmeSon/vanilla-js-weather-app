@@ -89,15 +89,17 @@ html {
   font-size: var(--result-description-fontSize);
   color: var(--color-light-grey);
 }
-/*
+
 .result_detail {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: var(--detail-fontSize);
+
+  justify-content: center;
+  justify-content: space-around;
 }
-*/
+/*
 .detail_first {
   display: flex;
   justify-content: space-evenly;
@@ -112,6 +114,7 @@ html {
   align-items: center;
   font-size: var(--detail-fontSize);
 }
+*/
 
 #cloud i {
   color: var(--color-blue);
@@ -124,4 +127,17 @@ html {
 }
 #minTemp i {
   color: var(--color-blue);
+}
+
+@media screen and (max-width: 600px) {
+  .result_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: var(--detail-fontSize);
+    padding-bottom: 20px;
+  }
 }
